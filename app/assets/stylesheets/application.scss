@@ -15,5 +15,18 @@
  *= require social-share-button
  */
 @import "social-share-button";
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import "bulma";
+
+.nav {
+  margin-bottom: 4em;
+}
+
+
+
+.social-share-button {
+  .ssb-icon {
+    background-size: 24px;
+    height: 24px;
+    width: 24px;
+  }
+}
