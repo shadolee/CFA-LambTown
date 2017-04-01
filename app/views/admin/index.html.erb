@@ -1,0 +1,21 @@
+<h1>Administrators Access Page</h1>
+<p>Only authorized admin can view this page. Congrats!</p>
+
+<table>
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Email</td>
+      <td>User Type</td>
+    </tr>
+  </thead>
+  <tbody>
+      <% @users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.email %></td>
+        <td><%= user.user_type %></td>
+      </tr>
+      <% end %>
+  </tbody>
+</table>

@@ -1,4 +1,23 @@
-<h1>Welcome to Lambtown</h1>
-<p>We are proud young lambs with big dreams!</p>
+<div class="container-flex">
+<p id="notice" class="denied"><%= notice %></p>
 
- <%= link_to 'Posts', posts_path  %>
+<h1>Welcome to Lambtown</h1>
+<p>We are proud young lambs</p>
+</div>
+
+<div class="container-flex">
+<%= link_to 'Posts', posts_path %><br>
+<a href="pages/about">About</a><br>
+<a href="/contact">Contact</a><br>
+
+<% if user_signed_in? %>
+  <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to 'Sign Up', new_user_registration_path %>
+<% end %>
+<br><br>
+</div>
+
+<div class="container-flex" id="lamb-pic">
+<img src="http://www.earthtimes.org/newsimage/eating-lamb-worst-environment_197.jpg" alt="We are Lambtown">
+</div>

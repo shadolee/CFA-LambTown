@@ -5,6 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem "pundit"
+
+gem "rolify"
+
 gem 'simple_form'
 gem 'friendly_id', '~> 5.1.0'
 gem "bulma-rails", "~> 0.4.0"

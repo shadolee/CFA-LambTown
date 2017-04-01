@@ -14,24 +14,45 @@
  *= require_self
  *= require social-share-button
  */
-@import "social-share-button";
-@import "bulma";
+ @import "social-share-button";
+ @import "bulma";
 
-.nav {
-  margin-bottom: 4em;
-}
+ .nav {
+   margin-bottom: 4em;
+ }
 
 
 
-.social-share-button {
-  .ssb-icon {
-    background-size: 24px;
-    height: 24px;
-    width: 24px;
-  }
-}
+ .social-share-button {
+   .ssb-icon {
+     background-size: 24px;
+     height: 24px;
+     width: 24px;
+   }
+ }
 
-h1 {
-  font-weight: bold;
+ h1 {
+   font-weight: bold;
+   font-size: 30px;
+   text-align: center;
+ }
 
-}
+ p {
+   text-align: center;
+ }
+
+ .container-flex {
+   text-align: center;
+  color: white;
+   background-color: black;
+ }
+
+ .about-text {
+   text-align: center;
+   font-weight: bold;
+   color: blue;
+ }
+
+ .container {
+   background-color: black;
+ }
